@@ -20,7 +20,7 @@ const Inputs: React.FC<{}> = () => {
         initialValues={initialValues}
         onSubmit={(values, actions) => {
           console.log({ values, actions });
-          alert(JSON.stringify(values, null, 2));
+          //axios.post("http://localhost:8080/auth/login",user)
           actions.setSubmitting(false);
           actions.resetForm();
         }}
